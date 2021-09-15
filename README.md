@@ -3,6 +3,7 @@
 Array
 
 Binary Search Trees
+1. BST Construction
 
 Dynamic Programming
 
@@ -13,6 +14,7 @@ Graphs
 Greedy algorithms
 
 Heap
+1. Min Heap Construction
 
 Linked List
 1. Linked List Contruction
