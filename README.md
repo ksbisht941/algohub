@@ -24,7 +24,7 @@ Searching
 Sorting
 
 Stack
-Min Max Stack Construction
+1. Min Max Stack Construction
 
 String
 
