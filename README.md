@@ -1,4 +1,4 @@
-# algohub
+# Algohub is collection of tens of algo question with thier solution. 
 
 Array
 
