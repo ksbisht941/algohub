@@ -30,5 +30,5 @@ Stack
 
 String
 
-Tries
+# Tries
 1. Suffix Tries Contruction
