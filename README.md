@@ -17,5 +17,16 @@ Heap
 Linked List
 1. Linked List Contruction
 
+Recursion
+
+Searching
+
+Sorting
+
+Stack
+Min Max Stack Construction
+
+String
+
 Tries
 1. Suffix Tries Contruction
