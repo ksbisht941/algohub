@@ -1,15 +1,24 @@
 # Algohub is collection of tens of algo question with thier solution. 
 
 Array
+1. Is Monotonic
+2. Merge Overlapping Intervals
+3. Move Element To End
+4. Smallest Difference
+5. Spiral Traverse
 
 Binary Search Trees
 1. BST Construction
+2. Validate BST
+
+Binary Trees
 
 Dynamic Programming
 
 Famous Algorithms
 
 Graphs
+1. Has Single Cycle
 
 Greedy algorithms
 
