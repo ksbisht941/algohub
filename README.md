@@ -24,11 +24,16 @@ Recursion
 Searching
 
 Sorting
+1. Bubble Sort
+2. Insertion Sort
+3. Selection Sort
+4. Three Number Sort
+5. Quick Sort
 
 Stack
 1. Min Max Stack Construction
 
 String
 
-# Tries
+Tries
 1. Suffix Tries Contruction
