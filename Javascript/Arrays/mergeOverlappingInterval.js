@@ -1,22 +1,15 @@
 function mergeOverlappingIntervals(interval) {
-  var sortedInterval = interval.sort(function (a, b) {
-    return a[0] - b[0];
-  });
+  var sortedInterval = interval.sort((a, b) => (a[0] - b[0]));
   var mergeIntervals = [];
   var currentInterval = sortedInterval[0];
   mergeIntervals.push(currentInterval);
-  for (
-    var _i = 0, sortedInterval_1 = sortedInterval;
-    _i < sortedInterval_1.length;
-    _i++
-  ) {
-    var nextInterval = sortedInterval_1[_i];
-    var _ = currentInterval[0],
-      currentIntervalEnd = currentInterval[1];
-    var nextIntervalStart = nextInterval[0],
-      nextIntervalEnd = nextInterval[1];
+
+  for (const nextInterval of sortedInterval) {
+    const [_, currentIntervalEnd] = currentInterval;
+    const [nextIntervalStart, nextIntervalEnd] = nextInterval;
+
     if (currentIntervalEnd >= nextIntervalStart) {
-      currentInterval[1] = Math.max(nextIntervalEnd, currentIntervalEnd);
+      currentInterval[1] = nextIntervalEnd;
     } else {
       currentInterval = nextInterval;
       mergeIntervals.push(currentInterval);
@@ -24,6 +17,7 @@ function mergeOverlappingIntervals(interval) {
   }
   return mergeIntervals;
 }
+
 // Call the function
 var intervals = [
   [1, 2],
