@@ -24,6 +24,7 @@ Graphs
 1. Has Single Cycle
 
 Greedy algorithms
+1. Minimum Waiting Time
 
 Heap
 1. Min Heap Construction
