@@ -17,6 +17,7 @@ Binary Trees
 3. Max Subset Sum No Adjecent
 
 Dynamic Programming
+1. Max Subset Sum No Adjacent
 
 Famous Algorithms
 
