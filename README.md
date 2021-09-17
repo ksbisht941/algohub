@@ -12,6 +12,9 @@ Binary Search Trees
 2. Validate BST
 
 Binary Trees
+1. Find Successor
+2. Invert Binary Tree
+3. Max Subset Sum No Adjecent
 
 Dynamic Programming
 
