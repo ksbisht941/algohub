@@ -16,7 +16,6 @@ def mergeOverlappingIntervals(intervals):
             currentInterval[1] = max(currentIntervalEnd, nextIntervalEnd)
         else:
             currentInterval = nextInterval
-            print(currentInterval)
             mergeIntervals.append(currentInterval)
 
     return mergeIntervals
