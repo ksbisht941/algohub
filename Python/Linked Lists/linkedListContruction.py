@@ -36,7 +36,7 @@ class DoublyLinkedList:
 
         self.remove(nodeToInsert)
         nodeToInsert.prev = node.prev
-        nodeToInsert.next = node.next
+        nodeToInsert.next = node
 
         if node.prev is None:
             self.head = nodeToInsert
