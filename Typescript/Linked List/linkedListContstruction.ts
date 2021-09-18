@@ -97,21 +97,72 @@ export class DoublyLinkedList {
 
 
     }
-
+    
+    // O(1) time | O(1) space
     insertAtPosition(position: number, nodeToInsert: Node) {
-        // Write your code here.
+        if (position === 1) {
+            this.setHead(nodeToInsert);
+            return;
+        }
+
+        let currentPosition = 1;
+        let node = this.head;
+
+        while (node !== null && currentPosition !== position) {
+            node = node.next;
+            currentPosition += 1
+        }
+
+        if (node !== null) {
+            this.insertBefore(node, nodeToInsert);
+        } else {
+            this.setTail(nodeToInsert)
+        }
     }
 
+    // O(1) time | O(1) space
     removeNodesWithValue(value: number) {
-        // Write your code here.
+        let node = this.head;
+
+        while (node !== null) {
+            if (node.value == value) {
+                this.remove(node)
+            }
+            node = node.next
+        }
     }
 
     remove(node: Node) {
-        // Write your code here.
+        if (node === this.head) {
+            this.head = this.head.next
+        }
+        if (node === this.tail) {
+            this.tail = this.tail.prev
+        }
+
+        this.removeNodeBindings(node)
     }
 
     containsNodeWithValue(value: number) {
-        // Write your code here.
-        return false;
+        let node = this.head;
+
+        while (node !== null && node.value !== value) {
+            node = node.next
+        }
+
+        return node !== null;
+    }
+
+    removeNodeBindings(node: Node) {
+        if (node.prev !== null) {
+            node.prev.next = node.next;
+        }
+
+        if (node.next !== null) {
+            node.next.prev = node.prev
+        }
+
+        node.prev = null
+        node.next = null
     }
 }

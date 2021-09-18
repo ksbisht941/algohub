@@ -62,7 +62,6 @@ class DoublyLinkedList:
 
         node.next = nodeToInsert
 
-
   # O(p) time | O(1) space
     def insertAtPosition(self, position, nodeToInsert):
         if position == 1:
@@ -80,7 +79,6 @@ class DoublyLinkedList:
             self.insertBefore(node, nodeToInsert)
         else:
             self.setTail(nodeToInsert)
-
 
     def removeNodesWithValue(self, value):
         node = self.head
