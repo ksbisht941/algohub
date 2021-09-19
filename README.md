@@ -34,8 +34,10 @@ Linked List
 1. Linked List Contruction
 
 Recursion
+1. Phone Number Mnemonics
 
 Searching
+1. Search In Sorted Matrix
 
 Sorting
 1. Bubble Sort
