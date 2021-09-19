@@ -126,9 +126,13 @@ export class DoublyLinkedList {
 
         while (node !== null) {
             if (node.value == value) {
-                this.remove(node)
+                const currentNode = node;
+                node = node.next;
+
+                if (currentNode.value === value) {
+                    this.remove(currentNode);
+                }
             }
-            node = node.next
         }
     }
 

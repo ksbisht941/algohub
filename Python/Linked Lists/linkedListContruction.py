@@ -82,11 +82,13 @@ class DoublyLinkedList:
 
     def removeNodesWithValue(self, value):
         node = self.head
-
+        
         while node is not None:
-            if node.value == value:
-                self.remove(node)
+            nodeToRemove = node
             node = node.next
+            
+            if nodeToRemove.value == value:
+                self.remove(nodeToRemove)
 
   # O(1) time | O(1) space
     def remove(self, node):
