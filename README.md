@@ -6,6 +6,9 @@ Array
 3. Move Element To End
 4. Smallest Difference
 5. Spiral Traverse
+6. Four Number Sum
+7. Subarray Sort
+8. Two Number Sum
 
 Binary Search Trees
 1. BST Construction
@@ -14,7 +17,6 @@ Binary Search Trees
 Binary Trees
 1. Find Successor
 2. Invert Binary Tree
-3. Max Subset Sum No Adjecent
 
 Dynamic Programming
 1. Max Subset Sum No Adjacent
@@ -35,6 +37,7 @@ Linked List
 
 Recursion
 1. Phone Number Mnemonics
+2. Generate Div Tags
 
 Searching
 1. Search In Sorted Matrix
