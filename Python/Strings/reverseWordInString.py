@@ -58,7 +58,7 @@ def reverseListRange(list, start, end):
 
 
 # Call the function
-string = 'AlgoExpert is the best!'
+string = 'Kevin is the best!'
 output = reverseWordsInString(string)
 print('👋 Output:', output)
-# best! the is AlgoExpert
+# best! the is Kevin

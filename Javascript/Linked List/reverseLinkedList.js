@@ -9,6 +9,7 @@ var LinkedList = /** @class */ (function () {
     }
     return LinkedList;
 }());
+
 exports.LinkedList = LinkedList;
 function reverseLinkedList(head) {
     var previousNode = null;

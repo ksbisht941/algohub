@@ -1,4 +1,3 @@
-package com.algoexpert.program
 
 // Do not edit the class below except for the buildHeap,
 // siftDown, siftUp, peek, remove, and insert methods.

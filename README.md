@@ -1,4 +1,5 @@
-# Algohub is collection of tens of algo question with thier solution. 
+# Algohub 
+Algohub is collection of tens of algo question with thier solution. 
 
 ## Array
 1. Is Monotonic
@@ -56,6 +57,8 @@
 1. Min Max Stack Construction
 
 ## String
+1. Valid IP Address
+2. Reversed Word In String
 
 ## Tries
 1. Suffix Tries Contruction
