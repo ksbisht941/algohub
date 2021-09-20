@@ -35,6 +35,7 @@ Heap
 
 Linked List
 1. Linked List Contruction
+2. Reversed LinkedList
 
 Recursion
 1. Phone Number Mnemonics
@@ -49,6 +50,7 @@ Sorting
 3. Selection Sort
 4. Three Number Sort
 5. Quick Sort
+6. Merge Sort
 
 Stack
 1. Min Max Stack Construction
