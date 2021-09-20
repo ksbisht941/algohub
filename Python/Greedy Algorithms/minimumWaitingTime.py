@@ -12,3 +12,4 @@ def minimumWaitingTime(queries):
 queries = [3, 2, 1, 2, 6]
 output = minimumWaitingTime(queries)
 print("👋 Output:", output)
+# 👋 Output: 17
