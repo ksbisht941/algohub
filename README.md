@@ -11,6 +11,7 @@ Algohub is collection of tens of algo question with thier solution.
 7. Subarray Sort
 8. Two Number Sum
 9. Largest Range
+10. Longest Peak
 
 ## Binary Search Trees
 1. BST Construction
