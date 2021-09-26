@@ -5,7 +5,6 @@ class BST:
         self.left = left
         self.right = right
 
-
 def reconstructBst(preOrderTraversalValues):
     if len(preOrderTraversalValues) == 0:
         return None
