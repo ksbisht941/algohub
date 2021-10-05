@@ -28,6 +28,7 @@ Algohub is collection of tens of algo question with thier solution.
 
 ## Graphs
 1. Has Single Cycle
+2. Cycle In Graph
 
 ## Greedy algorithms
 1. Minimum Waiting Time
@@ -56,6 +57,7 @@ Algohub is collection of tens of algo question with thier solution.
 
 ## Stack
 1. Min Max Stack Construction
+2. Next Greater Element
 
 ## String
 1. Valid IP Address
