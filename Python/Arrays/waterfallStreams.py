@@ -1,8 +1,5 @@
 # Here is your answer
 # SOLUTION 1
-from typing import final
-
-
 def waterfallStreams(array, source):
     rowAbove = array[0][:]
     rowAbove[source] = -1
