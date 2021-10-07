@@ -1,22 +1,22 @@
 def solveSudoku(board):
-    solvePartialSodoku(0, 0, board)
+    solvePartialSudoku(0, 0, board)
     return board
 
-def solvePartialSodoku(row, col, board):
+def solvePartialSudoku(row, col, board):
     currentRow = row
     currentCol = col
 
-    if currentCol == len(board[row]):
+    if currentCol == len(board[currentRow]):
         currentRow += 1
         currentCol = 0
 
         if currentRow == len(board):
             return True
 
-    if board[currentRow][currentRow] == 0:
+    if board[currentRow][currentCol] == 0:
         return tryDigitsAtPosition(currentRow, currentCol, board)
 
-    return solvePartialSodoku(currentRow, currentCol, board)
+    return solvePartialSudoku(currentRow, currentCol + 1, board)
 
 
 def tryDigitsAtPosition(row, col, board):
@@ -24,7 +24,7 @@ def tryDigitsAtPosition(row, col, board):
         if isValidAtPosition(digit, row, col, board):
             board[row][col] = digit
 
-            if solvePartialSodoku(row, col + 1, board):
+            if solvePartialSudoku(row, col + 1, board):
                 return True
 
     board[row][col] = 0
@@ -34,16 +34,16 @@ def isValidAtPosition(value, row, col, board):
     rowIsValid = value not in board[row]
     colIsValid = value not in map(lambda r: r[col], board)
 
-    if not rowIsValid and not colIsValid:
+    if not rowIsValid or not colIsValid:
         return False
 
-    subgridRowStart = row // 3
-    subgridColStart = col // 3
+    subgridRowStart = (row // 3) * 3
+    subgridColStart = (col // 3) * 3
 
     for rowIdx in range(3):
         for colIdx in range(3):
-            rowToCheck = subgridRowStart * 3 + rowIdx
-            colToCheck = subgridColStart * 3 + colIdx
+            rowToCheck = subgridRowStart + rowIdx
+            colToCheck = subgridColStart + colIdx
             existingValue = board[rowToCheck][colToCheck]
 
             if existingValue == value:
