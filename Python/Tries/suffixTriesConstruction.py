@@ -1,7 +1,3 @@
-# Do not edit the class below except for the
-# populateSuffixTrieFrom and contains methods.
-# Feel free to add new properties and methods
-# to the class.
 class SuffixTrie:
     def __init__(self, string):
         self.root = {}
