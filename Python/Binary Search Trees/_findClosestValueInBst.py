@@ -2,11 +2,20 @@ def findClosestValueInBst(tree, target):
     return findClosestValueInBstHelper(tree, target, tree.value)
 
 def findClosestValueInBstHelper(tree, target, closest):
-    if tree is None:
-        return closest
-    
-    if abs(target - closest) > abs(target - tree.value):
-        return 
+    currentNode = tree
+
+    while currentNode is not None:
+        if abs(target - closest) > abs(target - currentNode.value):
+            closest = currentNode.value
+
+        if target < currentNode.value:
+            currentNode = currentNode.left
+        elif target > currentNode.value:
+            currentNode = currentNode.right
+        else:
+            break
+
+    return closest
 
 
 # This is the class of the input tree. Do not edit.
@@ -15,3 +24,5 @@ class BST:
         self.value = value
         self.left = None
         self.right = None
+
+
