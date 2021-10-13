@@ -6,15 +6,15 @@ class LinkedList:
 
 # Here is your solution
 def reverseLinkedList(head):
-   previousNode, currentNode = None, head
+   p1, p2 = None, head
 
-   while currentNode is not None:
-     nextNode = currentNode.next
-     currentNode.next = previousNode
-     previousNode = currentNode
-     currentNode = nextNode
+   while p2 is not None:
+     nextNode = p2.next
+     p2.next = p1
+     p1 = p2
+     p2 = nextNode
 
-   return previousNode
+   return p1
 
 # Call the function
 head = {

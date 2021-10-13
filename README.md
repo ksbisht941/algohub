@@ -62,6 +62,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## String
 1. Valid IP Address
 2. Reversed Word In String
+3. Longest Palindromic Substring
 
 ## Tries
 1. Suffix Tries Contruction
