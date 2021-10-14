@@ -63,6 +63,7 @@ Algohub is collection of tens of algo question with thier solution.
 1. Valid IP Address
 2. Reversed Word In String
 3. Longest Palindromic Substring
+4. Group Anagrams
 
 ## Tries
 1. Suffix Tries Contruction
