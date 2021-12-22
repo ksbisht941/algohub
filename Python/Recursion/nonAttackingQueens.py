@@ -39,22 +39,18 @@ def nonAttackingQueens(n):
     return getNumberOfNonAttackingQueenPlacements(0, blockedColumns, blockedUpDiagonals, blockedDownDiagonals, n)
 
 def getNumberOfNonAttackingQueenPlacements(row, blockedColumns, blockedUpDiagonals, blockedDownDiagonals, boardSize):
-    print(row)
-    print(columnsPlacements)
-    print(boardSize)
-
     if row == boardSize:
         return 1
 
     validPlacements = 0
     for col in range(boardSize):
-        if isNonAttackingPlacement(row, col, columnsPlacements):
+        if isNonAttackingPlacement(row, col, blockedColumns, blockedUpDiagonals, blockedDownDiagonals):
             placeQueen(row, col, blockedColumns, blockedUpDiagonals, blockedDownDiagonals)
             validPlacements += getNumberOfNonAttackingQueenPlacements(row + 1, blockedColumns, blockedUpDiagonals, blockedDownDiagonals, boardSize)
             removeQueen(row, col, blockedColumns, blockedUpDiagonals, blockedDownDiagonals)
     return validPlacements
 
-def isNonAttackingPlacement(row, blockedColumns, blockedUpDiagonals, blockedDownDiagonals, columnsPlacements):
+def isNonAttackingPlacement(row, col, blockedColumns, blockedUpDiagonals, blockedDownDiagonals):
     if col in blockedColumns:
         return False
 
@@ -77,6 +73,6 @@ def removeQueen(row, col, blockedColumns, blockedUpDiagonals, blockedDownDiagona
     blockedDownDiagonals.remove(row - col)
 
 
-n = 4
+n = 5
 output = nonAttackingQueens(n)
 print(output)
