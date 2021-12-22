@@ -31,5 +31,6 @@ class SuffixTrie:
 
         return self.endSymbol in node
 
-output = SuffixTrie("babc").populateSuffixTrieFrom
+# output = SuffixTrie("babc").populateSuffixTrieFrom
+output = SuffixTrie("babc").contains('bc')
 print(output)

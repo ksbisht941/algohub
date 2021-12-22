@@ -12,6 +12,7 @@ Algohub is collection of tens of algo question with thier solution.
 8. Two Number Sum
 9. Largest Range
 10. Longest Peak
+11. Zigzag Traverse
 
 ## Binary Search Trees
 1. BST Construction
