@@ -32,7 +32,7 @@ def numberOfBinaryTreeTopologies(n):
     for m in range(1, n + 1):
         numberOfTrees = 0
 
-        for leftTreeSize in range(n):
+        for leftTreeSize in range(m):
             rightTreeSize = m - 1 - leftTreeSize
             numberOfLeftTrees = cache[leftTreeSize]
             numberOfRightTrees = cache[rightTreeSize]
