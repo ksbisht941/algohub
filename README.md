@@ -26,6 +26,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## Dynamic Programming
 1. Max Subset Sum No Adjacent
 2. Number Of Ways To Traverse Graph
+3. Number Of Ways To Make Change
 
 ## Famous Algorithms
 
