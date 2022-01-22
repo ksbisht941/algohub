@@ -45,6 +45,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## Recursion
 1. Phone Number Mnemonics
 2. Generate Div Tags
+3. Powerset
 
 ## Searching
 1. Search In Sorted Matrix
