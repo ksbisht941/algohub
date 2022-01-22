@@ -21,6 +21,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## Binary Trees
 1. Find Successor
 2. Invert Binary Tree
+3. Height Balanced Binary Tree
 
 ## Dynamic Programming
 1. Max Subset Sum No Adjacent
