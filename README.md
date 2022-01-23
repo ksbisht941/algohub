@@ -73,6 +73,8 @@ Algohub is collection of tens of algo question with thier solution.
 2. Reversed Word In String
 3. Longest Palindromic Substring
 4. Group Anagrams
+5. Is Palindrome
+6. Run Length Encoding
 
 ## Tries
 1. Suffix Tries Contruction
