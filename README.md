@@ -44,6 +44,7 @@ Algohub is collection of tens of algo question with thier solution.
 1. Linked List Contruction
 2. Reversed LinkedList
 3. Find Loop
+4. Node Swap
 
 ## Recursion
 1. Phone Number Mnemonics
