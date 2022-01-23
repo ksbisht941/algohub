@@ -75,6 +75,7 @@ Algohub is collection of tens of algo question with thier solution.
 4. Group Anagrams
 5. Is Palindrome
 6. Run Length Encoding
+7. Generate Document
 
 ## Tries
 1. Suffix Tries Contruction
