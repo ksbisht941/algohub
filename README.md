@@ -33,6 +33,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## Graphs
 1. Has Single Cycle
 2. Cycle In Graph
+3. Boggle Board
 
 ## Greedy algorithms
 1. Minimum Waiting Time
@@ -50,6 +51,7 @@ Algohub is collection of tens of algo question with thier solution.
 1. Phone Number Mnemonics
 2. Generate Div Tags
 3. Powerset
+4. Staircase Traversal
 
 ## Searching
 1. Search In Sorted Matrix
