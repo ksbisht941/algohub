@@ -79,3 +79,4 @@ Algohub is collection of tens of algo question with thier solution.
 
 ## Tries
 1. Suffix Tries Contruction
+2. Multi String Search
