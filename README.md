@@ -29,6 +29,7 @@ Algohub is collection of tens of algo question with thier solution.
 3. Number Of Ways To Make Change
 
 ## Famous Algorithms
+1. Dijkstras Algorithm
 
 ## Graphs
 1. Has Single Cycle
