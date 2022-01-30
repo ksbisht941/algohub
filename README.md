@@ -47,6 +47,7 @@ Algohub is collection of tens of algo question with thier solution.
 2. Reversed LinkedList
 3. Find Loop
 4. Node Swap
+5. Merge Linked Lists
 
 ## Recursion
 1. Phone Number Mnemonics
@@ -56,6 +57,7 @@ Algohub is collection of tens of algo question with thier solution.
 
 ## Searching
 1. Search In Sorted Matrix
+2. Shifted Binary Search
 
 ## Sorting
 1. Bubble Sort

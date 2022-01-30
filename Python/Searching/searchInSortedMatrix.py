@@ -2,11 +2,7 @@ def searchInSortedMatrix(matrix, target):
     row = 0
     col = len(matrix[0]) - 1 
 
-    print(len(matrix))
-
     while row < len(matrix) and col >= 0:
-        print(matrix[row][col])
-
         if matrix[row][col] > target:
             col -= 1
         elif matrix[row][col] < target:
