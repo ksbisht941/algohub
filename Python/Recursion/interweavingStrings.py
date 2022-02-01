@@ -29,24 +29,26 @@ def interweavingStrings(one, two, three):
     if len(three) != len(one) + len(two):
         return False
     
-    
-    return areInterwoven(one, two, three, 0, 0)
+    cache = [[None for jdx in range(len(two) + 1)] for idx in range(len(one) + 1)]
+    return areInterwoven(one, two, three, 0, 0, cache)
 
-def areInterwoven(one, two, three, i, j, cache):
-    if cache[i][j] is not None:
-        return cache[i][j]
-        
-    k = i + j
-    if k == len(three):
+def areInterwoven(one, two, three, idx, jdx, cache):
+    kdx = idx + jdx
+
+    if kdx == len(three):
+        cache[idx][jdx] = True
         return True
     
-    if i < len(one) and one[i] == three[k]:
-        if areInterwoven(one, two, three, i + 1, j):
+    if idx < len(one) and one[idx] == three[kdx]:
+        cache[idx][jdx] = areInterwoven(one, two, three, idx + 1, jdx, cache)
+        if cache[idx][jdx]:
             return True
 
-    if j < len(two) and two[j] == three[k]:
-         return areInterwoven(one, two, three, i, j + 1)
+    if jdx < len(two) and two[jdx] == three[kdx]:
+        cache[idx][jdx] = areInterwoven(one, two, three, idx, jdx + 1, cache)
+        return cache[idx][jdx]
 
+    cache[idx][jdx] = False
     return False
     
 
