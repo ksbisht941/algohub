@@ -48,6 +48,7 @@ Algohub is collection of tens of algo question with thier solution.
 3. Find Loop
 4. Node Swap
 5. Merge Linked Lists
+6. Linked List Palindrome
 
 ## Recursion
 1. Phone Number Mnemonics
