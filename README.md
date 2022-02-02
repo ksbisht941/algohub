@@ -30,6 +30,7 @@ Algohub is collection of tens of algo question with thier solution.
 
 ## Famous Algorithms
 1. Dijkstras Algorithm
+2. A* Algorithm
 
 ## Graphs
 1. Has Single Cycle
