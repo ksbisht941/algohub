@@ -51,6 +51,7 @@ Algohub is collection of tens of algo question with thier solution.
 5. Merge Linked Lists
 6. Linked List Palindrome
 7. Remove Kth Node From End
+8. Shift Linked List
 
 ## Recursion
 1. Phone Number Mnemonics
