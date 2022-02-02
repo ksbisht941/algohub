@@ -17,14 +17,27 @@ def mergeLinkedLists(headOne, headTwo):
     p2 = headTwo
 
     while p1 is not None and p2 is not None:
-         if p1.value < p2.value:
-             p1Prev = p1
-             p1 = p1.next
+        if p1.value < p2.value:
+            p1Prev = p1
+            p1 = p1.next
         else:
+            if p1Prev is not None:
+                p1Prev.next = p2
             
+            p1Prev = p2
+            p2 = p2.next
+            p1Prev.next = p1
+        
+    if p1 is None:
+        p1Prev.next = p2
+
+    return headOne if headOne.value < headTwo.value else headTwo
+
 
 # headOne = 2 -> 6 -> 7 -> 8 # the head node with value 2
 # headTwo = 1 -> 3 -> 4 -> 5 -> 9 -> 10 # the head node with value 1
+
+# 1 -> 2 -> 3 -> 4
 
 # output = mergeLinkedLists(headOne, headTwo)
 # print('👋 Output', output)
