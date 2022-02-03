@@ -1,5 +1,5 @@
 # Algohub 
-Algohub is collection of tens of algo question with thier solution. 
+Algo Solutions 
 
 ## Array
 1. Is Monotonic
@@ -36,6 +36,7 @@ Algohub is collection of tens of algo question with thier solution.
 1. Has Single Cycle
 2. Cycle In Graph
 3. Boggle Board
+4. Breadth First Search
 
 ## Greedy algorithms
 1. Minimum Waiting Time
@@ -63,6 +64,7 @@ Algohub is collection of tens of algo question with thier solution.
 ## Searching
 1. Search In Sorted Matrix
 2. Shifted Binary Search
+3. Search For Range
 
 ## Sorting
 1. Bubble Sort
