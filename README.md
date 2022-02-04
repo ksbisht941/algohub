@@ -65,6 +65,7 @@ Algo Solutions
 1. Search In Sorted Matrix
 2. Shifted Binary Search
 3. Search For Range
+4. Quick Select
 
 ## Sorting
 1. Bubble Sort

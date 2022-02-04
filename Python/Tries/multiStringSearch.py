@@ -5,38 +5,40 @@
 
 # Solution 1
 # O(bns) time | O(n) space
-# def multiStringSearch(bigString, smallStrings):
-#     return [isInBigString(bigString, smallString) for smallString in smallStrings]
+def multiStringSearch(bigString, smallStrings):
+    return [isInBigString(bigString, smallString) for smallString in smallStrings]
 
-# def isInBigString(bigString, smallString):
-#     for idx in range(len(bigString)):
-#         if idx + len(smallString) > len(bigString):
-#             break
+def isInBigString(bigString, smallString):
+    for idx in range(len(bigString)):
+        if idx + len(smallString) > len(bigString):
+            break
 
-#         return isInBigStringHelper(bigString, smallString, idx)
+        if isInBigStringHelper(bigString, smallString, idx):
+            return True
 
-#     return False
+    return False
 
-# def isInBigStringHelper(bigString, smallString, startIdx):
-#     leftBigIdx = startIdx
-#     rightBigIdx = startIdx + len(smallString) - 1
+def isInBigStringHelper(bigString, smallString, startIdx):
+    leftBigIdx = startIdx
+    rightBigIdx = startIdx + len(smallString) - 1
+    leftSmallIdx = 0
+    rightSmallIdx = len(smallString) - 1
 
-#     leftSmallIdx = 0
-#     rightSmallIdx = len(smallString) - 1
+    while (leftBigIdx < rightBigIdx):
+        if (
+            smallString[leftSmallIdx] != bigString[leftBigIdx] or
+            smallString[rightSmallIdx] != bigString[rightBigIdx]
+        ):
+            return False
 
-#     while leftBigIdx <= rightBigIdx:
-#         if (
-#             bigString[leftBigIdx] != smallString[leftSmallIdx] or
-#             bigString[rightBigIdx] != smallString[rightSmallIdx]
-#         ):
-#             return False
+        leftBigIdx += 1
+        rightBigIdx -= 1
+        leftSmallIdx += 1
+        rightSmallIdx -= 1
+    
+    return True
 
-#         leftBigIdx += 1
-#         leftSmallIdx += 1
-#         rightBigIdx -= 1
-#         rightSmallIdx -= 1
 
-#     return True
 
 # Solution 2
 # O(bns) time | O(n) space
@@ -72,8 +74,8 @@
 
 
 # Solution 3
-def multiStringSearch(bigString, smallStrings):
-    pass
+# def multiStringSearch(bigString, smallStrings):
+#     pass
 
 bigString = "this is a big string"
 smallStrings = ["this", "yo", "is", "a", "bigger", "string", "kappa"]
