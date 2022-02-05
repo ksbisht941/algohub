@@ -87,6 +87,7 @@ Algo Solutions
 5. Is Palindrome
 6. Run Length Encoding
 7. Generate Document
+8. Longest Balanced Substring
 
 ## Tries
 1. Suffix Tries Contruction
